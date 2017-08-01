@@ -18,7 +18,7 @@ GPIO.setup(inputPin, GPIO.IN)
 mail = smtplib.SMTP('smtp.gmail.com', 587)
 mail.ehlo()
 mail.starttls()
-mail.login('sherryaujla3@gmail.com',2269781603)
+mail.login('from_email',password)
 
 try:
         while True:
@@ -27,8 +27,8 @@ try:
                         if input == 1:
                                 print("open")
                                 mailNum += 1
-                                content = 'Hello Maninder, \nYou have got a new mail ' + str (mailNum)
-                                mail.sendmail('sherryaujla3@gmail.com','mdhanoa550@gmail.com', content)
+                                content = 'Hello ABC, \nYou have got a new mail ' + str (mailNum)
+                                mail.sendmail('from_email','to_email', content)
                 #update previous input
                 prev_input = input
                 sleep (2)
