@@ -1,5 +1,7 @@
-This small code use a sensor to detect light and once sensor detects light,
-it sends email to user.
+#Email notification
+
+This small code use a sensor to detect light and once sensor detects light,it sends email to user.
+
 	Hardware requirement:
 		1. Light Sensor
 		2. RaspberryPi with wifi
