@@ -1,6 +1,6 @@
 '''
  ----------------------------------------------------------------------
- 				Program to log Data in file
+ 		Send email after sensor get activated
  -----------------------------------------------------------------------
  @ Author 		: Anesh Kumar
  @ Email		: anesh_kumar@yahoo.com
