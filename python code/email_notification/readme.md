@@ -1,4 +1,4 @@
-#Email notification
+# Email notification
 
 This small code use a sensor to detect light and once sensor detects light,it sends email to user.
 
