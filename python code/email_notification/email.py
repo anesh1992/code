@@ -1,3 +1,15 @@
+'''
+ ----------------------------------------------------------------------
+ 				Program to log Data in file
+ -----------------------------------------------------------------------
+ @ Author 		: Anesh Kumar
+ @ Email		: anesh_kumar@yahoo.com
+ @ Version		:
+ @ Date			: Jan, 2017
+ @ Brief		: Once sensor get activated, device sends email  
+ 			  to user.			
+'''
+
 #!/usr/local/bin/python
 import smtplib
 import RPi.GPIO as GPIO
@@ -5,12 +17,15 @@ from time import sleep
 
 GPIO.setmode(GPIO.BOARD)
 
-#define the pin that goes to the circuit
+#pin powering up the sensor
 powerPin = 37
+#pin connected to input of the sensor
 inputPin = 35
 prev_input = 0
 mailNum = 0
+#configure powerpin (pin 37) as output
 GPIO.setup(powerPin, GPIO.OUT)
+#make pin 37 high
 GPIO.output(powerPin, GPIO.HIGH)
 
 GPIO.setup(inputPin, GPIO.IN)
