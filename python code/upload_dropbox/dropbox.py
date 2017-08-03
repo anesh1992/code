@@ -1,3 +1,15 @@
+'''
+ ----------------------------------------------------------------------
+ 		Home Security System
+ -----------------------------------------------------------------------
+ @ Author 		: Anesh Kumar
+ @ Email		: anesh_kumar@yahoo.com
+ @ Version		:
+ @ Date			: April, 2017
+ @ Brief		: Once PIR sensor detects, RaspberryPi camera takes  
+ 			  picture and upload to dropbox.			
+'''
+
 import RPi.GPIO as GPIO
 import time
 import urllib2
